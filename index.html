@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>서울지원 연간 안전교육</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+/* Layout: one header band, then a month-ordered grid of lesson cards; each card's top stripe uses that lesson's own theme color */
+:root{--bg:#eef2f8;--surface:#fff;--fg:#14213d;--muted:#5a6886;--navy:#1b2f5c;--yellow:#f6c418;--line:#d5deec;
+ --display:"Jua","Noto Sans KR",system-ui,sans-serif;--body:"Noto Sans KR",system-ui,-apple-system,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1626;--surface:#18233a;--fg:#e8edf7;--muted:#9aa8c4;--navy:#2c4a8a;--line:#2a3956;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);line-height:1.6}
+header{background:var(--navy);color:#fff;padding-block:28px 26px;padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}
+.in{max-width:900px;margin:0 auto}
+header .org{font-size:.85rem;opacity:.8}
+header h1{font-family:var(--display);font-weight:400;font-size:clamp(1.7rem,5vw,2.4rem);margin:4px 0 6px;line-height:1.25}
+header h1 em{font-style:normal;color:var(--yellow)}
+header p{margin:0;opacity:.85;font-size:.95rem;max-width:60ch}
+main{padding-block:22px 40px;padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+a.c{display:flex;flex-direction:column;gap:6px;text-decoration:none;color:inherit;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px 18px 18px;border-top:8px solid var(--c);transition:transform .15s,box-shadow .15s}
+a.c:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(20,33,61,.12)}
+a.c:focus-visible{outline:3px solid var(--c);outline-offset:3px}
+.m{display:flex;justify-content:space-between;align-items:center;font-size:.8rem;font-weight:700;color:var(--muted)}
+.m .mo{background:var(--c);color:#fff;border-radius:999px;padding:2px 10px}
+.t{font-family:var(--display);font-size:1.3rem;line-height:1.3}
+.d{font-size:.88rem;color:var(--muted)}
+.go{margin-top:auto;font-size:.85rem;font-weight:700;color:var(--c)}
+.empty{border:2px dashed var(--line);border-radius:16px;padding:16px 18px;color:var(--muted);font-size:.9rem;display:flex;flex-direction:column;gap:4px}
+.empty b{color:var(--fg)}
+footer{text-align:center;font-size:.8rem;color:var(--muted);padding:0 16px 30px}
+@media (prefers-reduced-motion:reduce){a.c{transition:none}}
+</style>
+</head>
+<body>
+<header><div class="in"><div class="org">축산물품질평가원 서울지원</div>
+<h1>연간 <em>안전보건교육</em></h1>
+<p>이번 달 교육을 눌러 시작하세요. 모든 교육은 직접 눌러 보고 따라 하는 실습형이고, 마지막 퀴즈를 통과하면 이수 화면이 나와요.</p></div></header>
+<main><div class="in"><div class="grid">
+<div class="empty"><b>1월</b>준비 중이에요</div>
+<a class="c" style="--c:#3d8fd6" href="02-winter.html"><span class="m"><span class="mo">2월</span>약 10분</span><span class="t">겨울철 작업장 안전</span><span class="d">옷 입히기 게임, 한랭질환 증상 맞추기, 숨은 미끄럼 위험 찾기</span><span class="go">시작하기 →</span></a>
+<a class="c" style="--c:#7b63c9" href="03-msd.html"><span class="m"><span class="mo">3월</span>약 10분</span><span class="t">근골격계 예방</span><span class="d">몸 그림으로 위험 부위 알기, 따라 하는 스트레칭, 바른 자세 고르기</span><span class="go">시작하기 →</span></a>
+<a class="c" style="--c:#d7261e" href="04-fire.html"><span class="m"><span class="mo">4월</span>약 8분</span><span class="t">화재예방 · 소화기 사용법</span><span class="d">안전핀 뽑고 불의 밑부분에 분사하는 소화기 실습 시뮬레이터</span><span class="go">시작하기 →</span></a>
+<a class="c" style="--c:#d98a00" href="04-bonus-mission.html"><span class="m"><span class="mo">4월 보너스</span>약 25분 · 팀 활동</span><span class="t">비상시 임무카드</span><span class="d">작업장별로 임무를 나누고 배정표를 만들어 저장해요</span><span class="go">시작하기 →</span></a>
+<a class="c" style="--c:#1b2f5c" href="05-risk.html"><span class="m"><span class="mo">5월</span>약 10분</span><span class="t">위험성평가</span><span class="d">현장은 상·중·하, 사무실은 체크리스트로 직접 평가해 봐요</span><span class="go">시작하기 →</span></a>
+<a class="c" style="--c:#2f7be0" href="06-electric.html"><span class="m"><span class="mo">6월</span>약 10분</span><span class="t">감전사고 예방</span><span class="d">안전·위험 카드 게임, 멀티탭 퍼즐, 감전사고 대응 시뮬레이션</span><span class="go">시작하기 →</span></a>
+<a class="c" style="--c:#d8392b" href="07-stopwork.html"><span class="m"><span class="mo">7월</span>약 7분</span><span class="t">작업중지요청제도</span><span class="d">위험하면 멈추는 권리, 요청 절차와 법적 보호</span><span class="go">시작하기 →</span></a>
+<div class="empty"><b>8월</b>준비 중이에요</div>
+<a class="c" style="--c:#2e7d74" href="09-stress.html"><span class="m"><span class="mo">9월</span>약 10분</span><span class="t">스트레스 예방</span><span class="d">내 신호 체크, 싱잉볼 호흡 실습, 상황별 대처와 도움 창구</span><span class="go">시작하기 →</span></a>
+<a class="c" style="--c:#e0a100" href="10-knife.html"><span class="m"><span class="mo">10월</span>약 5분</span><span class="t">칼 사용 안전수칙</span><span class="d">사용 전 점검, 내절단성 장갑, 작업 중 주의, 칼집 보관</span><span class="go">시작하기 →</span></a>
+</div></div></main>
+<footer>축산물품질평가원 서울지원 · 안전보건교육</footer>
+</body>
+</html>
